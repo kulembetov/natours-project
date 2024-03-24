@@ -1,0 +1,23 @@
+{
+  "name": "natours-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss:css --watch",
+    "format": "prettier --write .",
+    "prepare": "husky",
+    "start": "live-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^9.0.11",
+    "prettier": "^3.2.5",
+    "sass": "^1.72.0"
+  },
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}
