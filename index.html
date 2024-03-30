@@ -67,7 +67,9 @@
           <span class="heading-primary--sub">is where life happens</span>
         </h1>
 
-        <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+        <a href="#section-tours" class="btn btn--white btn--animated"
+          >Discover our tours</a
+        >
       </div>
     </header>
     <main>
@@ -201,7 +203,7 @@
           </div>
         </div>
       </section>
-      <section class="section-tours">
+      <section class="section-tours" id="section-tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Most popular tours</h2>
         </div>
@@ -231,7 +233,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$297</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -261,7 +263,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$497</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -291,7 +293,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$897</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -492,5 +494,32 @@
         </div>
       </div>
     </footer>
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/nat-8.jpg" alt="tour photo" class="popup__img" />
+          <img src="img/nat-9.jpg" alt="tour photo" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary">Start booking now</h2>
+          <h3 class="heading-tertiary">
+            Important &ndash; Please read these terms before booking
+          </h3>
+          <p class="popup__text">
+            Exploring new destinations offers an exhilarating blend of
+            adventure, cultural enrichment, and the joy of discovering the
+            unknown. Whether it's the serene landscapes of the countryside or
+            the bustling streets of a foreign city, travel invites us to step
+            out of our comfort zones and embrace the world's vast diversity. So,
+            pack your bags, set your itinerary, and embark on a journey that
+            promises unforgettable memories and experiences. Start booking now
+            to turn your travel dreams into reality.
+          </p>
+          <a href="#popup" class="btn btn--green">Book now</a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
