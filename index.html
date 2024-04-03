@@ -121,19 +121,27 @@
           <div class="col-1-of-2">
             <div class="composition">
               <img
-                src="img/nat-1-large.jpg"
+                srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                sizes="(max-width: 56.25rem) 20vw, (max-width: 600px) 30vw, 300px"
                 alt="photo 1"
                 class="composition__photo composition__photo--p1"
+                src="img/nat-1-large.jpg"
               />
+
               <img
-                src="img/nat-2-large.jpg"
+                srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                sizes="(max-width: 56.25rem) 20vw, (max-width: 600px) 30vw, 300px"
                 alt="photo 2"
                 class="composition__photo composition__photo--p2"
+                src="img/nat-2-large.jpg"
               />
+
               <img
-                src="img/nat-3-large.jpg"
+                srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                sizes="(max-width: 56.25rem) 20vw, (max-width: 600px) 30vw, 300px"
                 alt="photo 3"
                 class="composition__photo composition__photo--p3"
+                src="img/nat-3-large.jpg"
               />
             </div>
           </div>
@@ -334,16 +342,7 @@
                 zone. It was more than just a trip; it was a quest towards
                 self-discovery. Venturing through the lush landscapes of New
                 Zealand, she found herself amidst the majestic mountains and
-                serene lakes, each view more breathtaking than the last. This
-                was not just about the places she visited; it was about the
-                smiles she shared, the cultures she embraced, and the myriad of
-                people who started as strangers but became part of her story.
-                Through her travels, Emily realized that the world was far more
-                beautiful and kind than she had imagined. She returned not just
-                with souvenirs, but with a renewed spirit and a heart full of
-                joy. Her story is a testament to the power of travel to
-                transform us, to challenge our limits, and to make us genuinely
-                happy. Join us, and let your own story unfold.
+                serene lakes, each view more breathtaking than the last.
               </p>
             </div>
           </div>
@@ -366,15 +365,7 @@
                 Marco's adventure took him to the heart of Peru, where the
                 ancient ruins of Machu Picchu awaited. With each step on the
                 Inca Trail, he walked the paths of history, uncovering the
-                mysteries of the past. This journey was not just a physical
-                challenge but a spiritual awakening. Surrounded by the Andes'
-                grandeur, Marco found a deep sense of connection with nature and
-                the ancient civilizations that once thrived there. His encounter
-                with local communities enriched his understanding of their
-                enduring traditions and vibrant culture. Marco's experience in
-                Peru was a profound reminder that adventure can be both an
-                exploration of the world and an introspective journey into one's
-                soul.
+                mysteries of the past.
               </p>
             </div>
           </div>
@@ -452,7 +443,21 @@
 
     <footer class="footer">
       <div class="footer__logo-box">
-        <img src="img/logo-green-2x.png" alt="full logo" class="footer__logo" />
+        <picture class="footer__logo">
+          <source
+            srcset="
+              img/logo-green-small-1x.png 1x,
+              img/logo-green-small-2x.png 2x
+            "
+            media="(max-width: 37.5em)"
+          />
+          <img
+            srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x"
+            alt="full logo"
+            src="img/logo-green-1x.png"
+            class="footer__logo"
+          />
+        </picture>
       </div>
       <div class="row">
         <div class="col-1-of-2">
