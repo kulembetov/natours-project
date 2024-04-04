@@ -642,12 +642,11 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: 9000;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s;
-  backdrop-filter: blur(5px);
 }
 .popup:target {
   opacity: 1;
@@ -685,14 +684,14 @@ body {
   transform: translate(-50%, -50%) scale(0.25);
   transition: all 0.4s 0.2s;
 }
-@media only screen and (max-width: 37.5em) {
-  .popup__content {
-    width: 90%;
-  }
-}
 .popup__left {
   width: 33.333333%;
   display: table-cell;
+}
+@media only screen and (max-width: 56.25em) {
+  .popup__left {
+    display: none;
+  }
 }
 .popup__right {
   width: 66.6666667%;
@@ -704,6 +703,11 @@ body {
   display: block;
   width: 100%;
 }
+@media only screen and (max-width: 56.25em) {
+  .popup__img {
+    display: none;
+  }
+}
 .popup__text {
   font-size: 1.4rem;
   margin-bottom: 4rem;
@@ -711,6 +715,14 @@ body {
   column-gap: 4rem;
   column-rule: 1px solid #999;
   hyphens: auto;
+}
+@media only screen and (max-width: 56.25em) {
+  .popup__text {
+    column-count: 1;
+    column-gap: 0;
+    column-rule: none;
+    hyphens: none;
+  }
 }
 
 .story {
