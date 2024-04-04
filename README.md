@@ -1,4 +1,3 @@
-
 # Natours Project
 
 ## Introduction
